@@ -1,0 +1,21 @@
+<!doctype html>
+<html ng-app>
+    <head>
+    	<meta charset="utf-8">
+        <title>无标题文档</title>
+        <script src="../js/angular-1.0.1.min.js"></script>
+    </head>
+    <body>
+       Your name: <input type="text" ng-model="yourname" placeholder="World">
+        <hr>
+        Hello {{yourname || 'World'}}!
+        
+        <!--
+        	文本输入指令<input ng-model="yourname" />绑定到一个叫yourname的模型变量。
+            双大括号标记将yourname模型变量添加到问候语文本。
+            你不需要为该应用另外注册一个事件侦听器或添加事件处理程序！
+        --->
+    </body>
+</html>
+
+
